@@ -13,5 +13,6 @@ namespace Rec2
         public void PriceSet(int price) => _price = price;
         public int PriceNum() => _price;
         public void MoreMemoryRahhhChrisGiveMeYourKidneys(int memory) => Memory += memory;
+        public static List<string> Conditions(int memory, int price, List<Laptop> laptops)=> laptops.Where(x=>x.Memory>=memory&&x._price<= price).Select(y=>y.Model).ToList();
     }
 }

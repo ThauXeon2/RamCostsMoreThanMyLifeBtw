@@ -12,6 +12,6 @@ namespace Rec2
         public int YearBack() => _releaseYear;
         public void PriceSet(int price) => _price = price;
         public double Off(int percent) => _price * (1 - (percent / 100.0));
-        public int BrandCount(string brand,List<SmartPhone> smartPhones) => smartPhones.Count(p => p.Brand == brand);
+        public static int BrandCount(string brand,List<SmartPhone> smartPhones) => smartPhones.Count(p => p.Brand == brand);
     }
 }
